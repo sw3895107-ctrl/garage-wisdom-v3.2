@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Garage Wisdom</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Garage Wisdom</h1>
+
+  <input id="search" placeholder="Search trouble codes..." />
+
+  <div id="results"></div>
+
+  <div class="cards">
+    <div class="card" onclick="openDetails('P0300')">
+      <img src="assets/default.jpg" />
+      <p>P0300</p>
+    </div>
+    <div class="card" onclick="openDetails('P0171')">
+      <img src="assets/engine.jpg" />
+      <p>P0171</p>
+    </div>
+    <div class="card" onclick="openDetails('P0420')">
+      <img src="assets/fuel.jpg" />
+      <p>P0420</p>
+    </div>
+  </div>
+
+  <div class="ai-box">
+    <textarea id="aiInput" placeholder="Ask AI about your issue..."></textarea>
+    <button onclick="askAI()">Ask AI</button>
+    <div id="aiResponse"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
